@@ -1,0 +1,26 @@
+<html><body>
+</br></br>
+<p>
+Inserisci parametri "titolo", "autore" e "amazon link" da inviare a <b>http://localhost:8080/java_first_ws/FirstServlet</b> tramite metodo POST affinchè venga salvata in mysql/slimtestsb/books</br>
+<form enctype="application/text" action="http://localhost:8080/java_first_ws/FirstServlet" method="POST">
+Inserisci Titolo:    <input name="book_title" type="text" value=""><br />
+Inserisci Autore: <input name="author" type="text" value=""><br />
+Inserisci Amazon link: <input name="amazon_url" type="text" value=""><br />
+<input name="KindOfQuery" type="hidden" value="INSERT"><br />
+<input type="submit" value="INVIA"/><br/>
+</form>
+</p>
+
+</br></br>
+<p>
+Seleziona i campi da leggere inviandoli a <b>http://localhost:8080/java_first_ws/FirstServlet</b> tramite metodo POST</br>
+<form enctype="application/text" action="http://localhost:8080/java_first_ws/FirstServlet" method="POST">
+<input name="book_title" type="checkbox">Titolo<br />
+<input name="author" type="checkbox">Autore<br />
+<input name="amazon_url" type="checkbox">Amazon link<br />
+<input name="KindOfQuery" type="hidden" value="SELECT"><br />
+<input type="submit" value="INVIA"/><br/>
+</form>
+</p>
+
+</body></html>
